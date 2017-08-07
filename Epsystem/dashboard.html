@@ -1,0 +1,19 @@
+<input type="text" ng-model="globalSearch.$" placeholder="{{searchbar}}" style="float: right">
+<h1> <marquee> Welocme to Student Portal </marquee> </h1>
+<div ng-controller="epctrl">
+	<ul>
+
+
+	          <h2> Name And Age of fresh graduates </h2>
+	          <li ng-repeat=" data in datas | filter : globalSearch">
+	          {{ data.name}}
+	          {{ data.age}}
+	          {{ data.paswd}}
+	          	
+	          </li>
+		
+
+
+	</ul>
+</div>
+

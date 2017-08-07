@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title> Animations </title>
+	<script src ="angular-min.js"></script>
+	<script src ="angular-animation-min.js"></script>
+	<script src ="am.js"></script>
+	<style>
+		.animate.ng-enter, .animate-ng-leave 
+		{
+			transition: 500ms linear all;
+		}
+		.animate.ng-leave.ng-leave-active
+		{
+			opacity: 0;
+		}
+		.animate.ng-enter.ng-enter-active
+		{
+			opacity: 10;
+		}
+	</style>
+</head>
+<body ng-app="myapp" ng-controller="mc">
+
+<input type="text" ng-model="searchBox">
+
+<ul>
+	<li class="animate" ng-repeat="food in foods | filter:searchBox">
+
+	{{ food }}
+		
+	</li>
+	
+</ul>
+
+</body>
+</html>

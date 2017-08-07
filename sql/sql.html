@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<title> sql </title>
+	<script src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src ="ap.js"></script>
+</head>
+<body ng-app="sqlapp" ng-view="" ng-controller="dbcrtl">
+<div>
+	<form>
+		Name: <input type="text" ng-model ="name" > <br>
+		Lastname: <input type="text" ng-model ="lname"> <br>
+		Deprtmnt: <input type="text" ng-model ="dpt">   <br>
+		account: <input type="text" ng-model ="acct">  <br>
+		<button type ="button" ng-click="insert()"> register </button>
+	</form>
+</div>
+
+</body>
+</html>

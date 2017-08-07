@@ -1,0 +1,22 @@
+{
+	"data":[
+		{
+
+		"name": "salman", 
+		"age":  "21",
+		"paswrd": "sam125"
+	},
+	{
+		"name": "saif",
+		"age" : "21",
+		"paswrd": "saif124"
+	},
+	{
+		"name": "kristen" ,
+		 "age":  "14",
+		 "paswrd": "5679"
+
+	}
+
+	]
+}

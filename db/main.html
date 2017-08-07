@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<title> Sql </title>
+	<script src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script type="text/javascript"></script>
+</head>
+<body ng-app='myapp' ng-controller="dbctrl" ng-view="">
+
+<div>
+	<form>
+	    ID: <input type="text" ng-model="id" id="id">
+		Name: <input type="text" ng-model="name" id="name">
+		<button type="button" ng-click="insertdata()"> Login </button>
+	</form>
+<table>
+	<thead>
+		<tr> 
+
+		  <th> Name </th>
+		  <th> Roll no</th>
+
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="student in data">
+			<td> {{ student.id }} </td>
+			<td> {{ student.name }} </td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<script>
+	var app = angular.module('myapp',[]);
+	app.controller('dbctrl', function($scope, $http)
+		{
+
+			$scope.insertdata=function()
+			{
+				$http.post("insert.php",{'id': $scope.id, 'name' :$scope.name})
+				.success(function()
+				{
+					$scope.msg="Data Insrted";
+				})
+			}
+		});
+
+</script>
+</body>
+</html>

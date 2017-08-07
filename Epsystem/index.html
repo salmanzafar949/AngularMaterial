@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<title> Employee Tracking System </title>
+	<script src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src ="ep.js"></script>
+	<script src ="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
+	<script src ="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+
+</head>
+<body ng-app="epApp" ng-controller="epctrl" ng-view="" ng-style="b">
+<div id="serachbox">
+
+<input type="text" ng-model="globalSearch.$" placeholder="{{searchbar}}" style="float: right">
+	
+</div>
+
+<div class="title">
+	<p style="color: black">
+		<h1> <center> <b><marquee> Welcome to Employee tracking system </marquee></b> </center>  </h1>
+	</p>
+</div>
+<div class="menu" style="background-color: orange">
+   			    <center>
+   			    <a href="#" style="padding:1%"><b style="font-size: 150%" style="color: black;"> Home </b></a>
+   			    <a href="#login" style="padding:1%"> <b style="font-size: 150%"> Login  </b></a>
+   			    <a href="#aboutus"> <b style="font-size: 150%"> Aboutus </b></a>
+   			    </center>
+   			
+</div>
+<div ng-view="" ng-app="epApp">
+	
+</div>
+
+</body>
+</html>

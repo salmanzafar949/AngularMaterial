@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<title> Passing data b/t Scopes </title>
+	<script src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src ="ap.js"></script>
+</head>
+<body ng-app="myapp">
+
+<input type="text" ng-model="message.property">
+<p ng-repeat="i in [2]">
+	<input type="text" ng-model="message.property">
+
+	Yoy wrote: {{ message.property }}
+</p>
+[Outer]: You Wrote: {{ message.property }}
+
+</body>
+</html>

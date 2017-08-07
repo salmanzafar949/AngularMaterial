@@ -1,0 +1,23 @@
+{
+
+	"records":[
+
+		{
+			"Name": "Salman",
+		"Age":  "21",
+		"qualification": "Bscs(Hojhvjk bnnm, mn,m ns)"
+	},
+	{
+		"Name": "Salman",
+		"Age":  "21",
+		"qualification": "Bscs(Hons)"
+	},
+	{
+		"Name": "Ali",
+		"Age":  "21",
+		"qualification": "Bscs(Hons)"
+	}
+	]
+
+		
+}
